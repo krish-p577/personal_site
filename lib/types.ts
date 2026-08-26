@@ -1,0 +1,1 @@
+export type SectionKey = 'about' | 'education' | 'experience' | 'projects' | 'blog';
