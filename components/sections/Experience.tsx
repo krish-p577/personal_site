@@ -3,7 +3,7 @@ import { experience } from '@/lib/data';
 export default function Experience() {
   return (
     <section className="text-right">
-      <h2 className="text-2xl font-semibold mb-6">Experience</h2>
+      {/* <h2 className="text-2xl font-semibold mb-6">Experience</h2> */}
       <div className="space-y-8">
         {experience.map((item) => (
           <div key={`${item.company}-${item.period}`}>

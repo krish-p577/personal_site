@@ -1,7 +1,7 @@
 'use client';
 
 
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
 import { useState } from 'react';
 import Sidebar from '@/components/Sidebar';
@@ -13,7 +13,7 @@ import type { SectionKey } from '@/lib/types';
 const TRANSITION_MS = 250;
 
 // adding shaders
-const ShaderSphereBackground = dynamic(() => import('@/app/ShaderSphereBackground'), { ssr: false });
+// const ShaderSphereBackground = dynamic(() => import('@/app/ShaderSphereBackground'), { ssr: false });
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<SectionKey>('about');
@@ -33,13 +33,9 @@ export default function Home() {
   }
 
   return (
-    <div style={{ position: 'relative' }}>
-          <ShaderSphereBackground />
-          <div style={{ position: 'relative', zIndex: 1 }}>
 
-
-    <main className="min-h-screen w-full flex flex-col md:flex-row bg-white text-neutral-900">
-      <Sidebar activeSection={activeSection} onNavigate={handleNavigate} />
+<main className="min-h-screen w-full flex flex-col md:flex-row bg-white/0 text-neutral-900">
+        <Sidebar activeSection={activeSection} onNavigate={handleNavigate} />
 
       <div className="flex-1 px-8 py-10 md:px-20 md:py-16 flex items-start md:items-center justify-end">
         <div
@@ -51,9 +47,6 @@ export default function Home() {
         </div>
       </div>
     </main>
-
-    </div>
-    </div>
 
   );
 }

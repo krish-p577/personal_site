@@ -3,8 +3,8 @@ import { aboutMe } from '@/lib/data';
 export default function AboutMe() {
   return (
     <section className="text-right">
-      <h1 className="text-3xl font-semibold mb-1">{aboutMe.name}</h1>
-      <p className="text-neutral-500 mb-6">{aboutMe.role}</p>
+      {/* <h1 className="text-3xl font-semibold mb-1">{aboutMe.name}</h1> */}
+      {/* <p className="text-neutral-500 mb-6">{aboutMe.role}</p> */}
 
       <div className="space-y-4 text-neutral-700 leading-relaxed">
         {aboutMe.bio.map((paragraph, i) => (

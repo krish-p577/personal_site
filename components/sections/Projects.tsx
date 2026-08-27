@@ -3,7 +3,7 @@ import { projects } from '@/lib/data';
 export default function Projects() {
   return (
     <section className="text-right">
-      <h2 className="text-2xl font-semibold mb-6">Projects</h2>
+      {/* <h2 className="text-2xl font-semibold mb-6">Projects</h2> */}
       <div className="space-y-6">
         {projects.map((project) => (
           <div key={project.title}>
