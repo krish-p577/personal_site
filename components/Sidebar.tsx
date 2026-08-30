@@ -3,7 +3,6 @@
 import type { SectionKey } from '@/lib/types';
 import { aboutMe } from '@/lib/data';
 
-
 const NAV_ITEMS: { key: SectionKey; label: string }[] = [
   { key: 'about', label: 'About' },
   { key: 'education', label: 'Education' },
@@ -21,13 +20,15 @@ export default function Sidebar({ activeSection, onNavigate }: SidebarProps) {
   return (
     <aside className="w-full md:w-64 shrink-0 px-8 py-10 md:pl-16 md:pr-8 md:py-16 flex md:flex-col gap-8 md:gap-12">
       <div>
-        <p className="text-lg font-semibold leading-tight text-neutral-900">
+        <h2 className="text-4xl font-normal leading-tight text-neutral-900 whitespace-nowrap">
           {aboutMe.name}
-        </p>
-        <p className="text-sm text-neutral-400">{aboutMe.role}</p>
+        </h2>
       </div>
 
-      <nav className="flex md:flex-col gap-1 -ml-3" aria-label="Section navigation">
+      <nav
+        className="flex md:flex-col md:flex-1 md:justify-center md:-translate-y-19 gap-5 -ml-1"
+        aria-label="Section navigation"
+      >
         {NAV_ITEMS.map((item) => {
           const isActive = activeSection === item.key;
           return (
