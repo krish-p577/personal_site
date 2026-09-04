@@ -1,39 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
-/**
- * ShaderSphereBackground
- * ------------------------------------------------------------------
- * A full-screen (or container-filling) Three.js background: a mostly
- * white sphere covered in a grid of fixed-size particle "slots." Each
- * slot has its own random threshold; a noise field drifting over time
- * decides which slots currently clear their threshold and show their
- * (constant-size) particle. The result: particle SIZE never changes,
- * but the DENSITY of visible particles rises and falls as the wave
- * passes — like a stipple/dither pattern shifting over time, rather
- * than dots that grow and shrink.
- *
- * Usage in Next.js (App Router):
- *
- *   import dynamic from 'next/dynamic';
- *   const ShaderSphereBackground = dynamic(
- *     () => import('../components/ShaderSphereBackground'),
- *     { ssr: false }
- *   );
- *
- *   export default function Page() {
- *     return (
- *       <div style={{ position: 'relative' }}>
- *         <ShaderSphereBackground />
- *         <div style={{ position: 'relative', zIndex: 1 }}>
- *           {/* your page content *\/}
- *         </div>
- *       </div>
- *     );
- *   }
- *
- * Plain three.js only — no react-three-fiber dependency.
- */
+// not in use this thing was horrible
 
 const SIMPLEX_NOISE_GLSL = /* glsl */ `
   vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }

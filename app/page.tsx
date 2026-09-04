@@ -6,8 +6,8 @@ import SectionRenderer from '@/components/SectionRenderer';
 import VantaBirdsBackground from '@/components/VantaBirdsBackground';
 import type { SectionKey } from '@/lib/types';
 
-// How long the CSS opacity transition takes (ms). Must match the
-// `duration-*` class used on the content wrapper below.
+
+// transition length, lowkey might break if too short
 const TRANSITION_MS = 250;
 
 export default function Home() {

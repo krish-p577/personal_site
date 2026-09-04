@@ -3,10 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 
-// Vanta effects touch `window`/DOM at import time, so this whole
-// component only ever runs client-side (via the 'use client' directive
-// + useEffect below) — no next/dynamic wrapper needed as long as this
-// component itself isn't imported into a server-only tree.
+
 export default function VantaBirdsBackground() {
   const vantaRef = useRef<HTMLDivElement>(null);
   const [vantaEffect, setVantaEffect] = useState<{ destroy: () => void } | null>(null);
