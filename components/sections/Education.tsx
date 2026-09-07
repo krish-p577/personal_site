@@ -11,7 +11,10 @@ export default function Education() {
             <p className="text-sm text-neutral-400">{item.period}</p>
             <p className="text-neutral-600">{item.degree}</p>
             {item.details && (
-              <p className="text-sm text-neutral-500 mt-1">{item.details}</p>
+              <p className="text-sb text-neutral-500 mt-1">{item.details}</p>
+            )}
+            {item.courses && (
+              <p className="text-sm text-neutral-500 mt-5 whitespace-pre-line">{item.courses}</p>
             )}
           </div>
         ))}

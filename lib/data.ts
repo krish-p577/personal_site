@@ -6,71 +6,87 @@ export const aboutMe = {
   name: 'Krish Patel',
   role: 'Software Engineer Intern',
   bio: [
-    "Hi, I'm [Your Name] — a software engineer who enjoys building things at the intersection of [X] and [Y].",
-    "Add a second paragraph here about what drives you, the kinds of problems you like solving, or what you're currently learning.",
+    "Hey, I'm Krish, ",
+    "A third year student studying Computer Science at the University of Toronto.",
+    "Driven by innovation, I like building things that can make a difference.",
+    "",
+    "krishpatel8976 [at] gmail.com",
   ],
   links: [
-    { label: 'Email', href: 'mailto:you@example.com' },
-    { label: 'GitHub', href: 'https://github.com/yourusername' },
-    { label: 'LinkedIn', href: 'https://linkedin.com/in/yourusername' },
-    { label: 'Resume', href: '/resume.pdf' },
+    // { label: 'Email', href: 'mailto:krishpatel8976@gmail.com' },
+    { label: 'GitHub', href: 'https://github.com/krish-p577' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/krish-patel577/' },
+    // { label: 'Resume', href: '/resume.pdf' },
   ],
 };
 
 export const education = [
   {
-    school: 'University Name',
+    school: 'University Of Toronto',
     degree: 'B.S. in Computer Science',
-    period: '2018 — 2022',
-    details: 'Relevant coursework, honors, GPA, or activities.',
+    period: '2024 — 2028',
+    details: 'Dean\'s List 2025',
+    courses: "Data Structures and Algorithms, Computer Organization, \nSoftware Tools and Systems, Software Design, Human Computer Interaction"
   },
   // Add more entries as needed
 ];
 
 export const experience = [
   {
-    company: 'Company Name',
-    role: 'Software Engineer',
-    period: 'Jun 2022 — Present',
+    company: 'Scotiabank',
+    role: 'Velocity Software Engineering Intern',
+    period: 'Jan 2026 — Apr 2026',
     bullets: [
-      'Describe an impact you made, ideally with a metric.',
-      'Describe a technical challenge you solved and how.',
-      'Mention technologies or systems you worked with.',
+      'Built automated data pipelines.',
+      'Developed an agentic RAG system to improve information retrieval.',
     ],
   },
   {
-    company: 'Previous Company',
-    role: 'Software Engineering Intern',
-    period: 'Summer 2021',
+    company: 'Intact',
+    role: 'Software Developer Intern',
+    period: 'Apr 2025 — Aug 2025',
     bullets: [
-      'Describe what you built or contributed to.',
-      'Describe a result or thing you learned.',
+      'Developed APIs for internal tools to improve efficiency.',
+      'Imporved performance, across a distributed system',
     ],
   },
-  // Add more entries as needed
+  {
+    company: 'UTSC Unbenched',
+    role: '\n\nHead of App Development',
+    period: 'Aug 2026 — Present',
+    bullets: [
+      'Leading a team of 4 developers, building our website',
+      'Hosting live game stats, rosters, and events at UTSC'
+    ],
+  },
 ];
 
 export const projects = [
   {
-    title: 'Project Name',
-    description: 'One or two sentences on what it does and why you built it.',
-    stack: ['Next.js', 'TypeScript', 'Tailwind'],
-    link: 'https://github.com/yourusername/project',
+    title: 'Distributed Async Job Orchestrator',
+    description: 'A distributed system that allows users to run jobs asynchronously across multiple nodes, with automatic retries and failure handling using Kahn\'s Algorithm.',
+    stack: ['Spring Boot', 'PostgreSQL', 'Docker'],
+    link: 'https://github.com/krish-p577/Distributed-Async-Job-Orchestrator/tree/main',
   },
   {
-    title: 'Another Project',
-    description: 'One or two sentences on what it does and why you built it.',
-    stack: ['Python', 'FastAPI'],
-    link: 'https://github.com/yourusername/project-two',
+    title: 'Club Connect',
+    description: 'A platform for students to find and join clubs based on their interests.',
+    stack: ['Flask', 'React', 'SQLAlchemy'],
+    link: 'https://github.com/krish-p577/Club-Connect',
   },
-  // Add more entries as needed
+  {
+    title: 'AI Finance Manager',
+    description: 'A personal finance management tool that uses AI to analyze spending habits and provide insights and recommendations.',
+    stack: ['Spring Boot', 'React', 'MySQL', 'AWS'],
+    link: 'https://github.com/krish-p577/Stature-the-AI-finance-manager',
+  },
 ];
 
 export const blogPosts = [
   {
-    title: 'Post Title',
-    date: 'Jan 2026',
-    excerpt: 'A short one or two sentence summary of what the post is about.',
+    title: 'What I think of the impacts of AI on software development, and culture',
+    date: 'Jan 7th, 2026',
+    excerpt: 'My views on this, cause it seems everyone has a different perspective. \n Maybe it won\'t be that bad',
     href: '/blog/post-slug',
   },
   // Add more entries as needed

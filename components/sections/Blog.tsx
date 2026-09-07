@@ -11,7 +11,7 @@ export default function Blog() {
               {post.title}
             </h3>
             <p className="text-sm text-neutral-400">{post.date}</p>
-            <p className="text-neutral-600 text-sm mt-1">{post.excerpt}</p>
+            <p className="text-neutral-600 text-sm mt-1 whitespace-pre-line">{post.excerpt}</p>
           </a>
         ))}
       </div>
