@@ -1,6 +1,4 @@
-// Edit everything in this file with your real content.
-// Keeping content separate from components makes it easy to update
-// your site without touching any layout/logic code.
+import { href } from "react-router-dom";
 
 export const aboutMe = {
   name: 'Krish Patel',
@@ -8,7 +6,7 @@ export const aboutMe = {
   bio: [
     "Hey, I'm Krish, ",
     "A third year student studying Computer Science at the University of Toronto.",
-    "Driven by innovation, I like building things that can make a difference.",
+    "I like building things that can make a difference.",
     "",
     "krishpatel8976 [at] gmail.com",
   ],
@@ -64,19 +62,25 @@ export const experience = [
 export const projects = [
   {
     title: 'Distributed Async Job Orchestrator',
-    description: 'A distributed system that allows users to run jobs asynchronously across multiple nodes, with automatic retries and failure handling using Kahn\'s Algorithm.',
+    description: 'A distributed, asynchronous workflow orchestrator inspired by Apache Airflow. ',
     stack: ['Spring Boot', 'PostgreSQL', 'Docker'],
     link: 'https://github.com/krish-p577/Distributed-Async-Job-Orchestrator/tree/main',
   },
   {
     title: 'Club Connect',
-    description: 'A platform for students to find and join clubs based on their interests.',
+    description: 'A platform for UofT students to find clubs based on their interests in an interactive way.',
     stack: ['Flask', 'React', 'SQLAlchemy'],
     link: 'https://github.com/krish-p577/Club-Connect',
   },
   {
     title: 'AI Finance Manager',
-    description: 'A personal finance management tool that uses AI to analyze spending habits and provide insights and recommendations.',
+    description: 'A personal finance management tool that uses AI to analyze spending habits and provide advice and insights to reach financial goals.',
+    stack: ['Spring Boot', 'React', 'MySQL', 'AWS'],
+    link: 'https://github.com/krish-p577/Stature-the-AI-finance-manager',
+  },
+  {
+    title: 'Wild Fire Risk Calculator',
+    description: 'Using live NASA data and user location data to calculate the rick of being affected by a wildfire. \nInspired by the California wildfires.',
     stack: ['Spring Boot', 'React', 'MySQL', 'AWS'],
     link: 'https://github.com/krish-p577/Stature-the-AI-finance-manager',
   },
@@ -84,10 +88,19 @@ export const projects = [
 
 export const blogPosts = [
   {
-    title: 'What I think of the impacts of AI on software development, and culture',
+    title: 'My thoughts on the impact of LLMs on software development, society, and culture',
     date: 'Jan 7th, 2026',
-    excerpt: 'My views on this, cause it seems everyone has a different perspective. \n Maybe it won\'t be that bad',
+    excerpt: 'Cause it seems everyone has a different perspective\n Maybe it won\'t be that bad',
     href: '/blog/post-slug',
   },
-  // Add more entries as needed
+// export const blogPosts: BlogPost[] = [
+//   {
+//     slug: 'first-post',
+//     title: 'Post Title',
+//     date: 'Jan 2026',
+//     excerpt: 'A short one or two sentence summary of what the post is about.',
+//     file: 'first-post.md',
+//   },
+
+
 ];
