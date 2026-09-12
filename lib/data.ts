@@ -1,3 +1,4 @@
+import type { BlogPost } from './types';
 import { href } from "react-router-dom";
 
 export const aboutMe = {
@@ -86,21 +87,21 @@ export const projects = [
   },
 ];
 
-export const blogPosts = [
-  {
-    title: 'My thoughts on the impact of LLMs on software development, society, and culture',
-    date: 'Jan 7th, 2026',
-    excerpt: 'Cause it seems everyone has a different perspective\n Maybe it won\'t be that bad',
-    href: '/blog/post-slug',
-  },
-// export const blogPosts: BlogPost[] = [
+// export const blogPosts = [
 //   {
-//     slug: 'first-post',
-//     title: 'Post Title',
-//     date: 'Jan 2026',
-//     excerpt: 'A short one or two sentence summary of what the post is about.',
-//     file: 'first-post.md',
+//     title: 'My thoughts on the impact of LLMs on software development, society, and culture',
+//     date: 'Jan 7th, 2026',
+//     excerpt: 'Cause it seems everyone has a different perspective\n Maybe it won\'t be that bad',
+//     href: '/blog/post-slug',
 //   },
+export const blogPosts: BlogPost[] = [
+  {
+    slug: 'first-post',
+    title: 'Post Title',
+    date: 'Jan 2026',
+    excerpt: 'A short one or two sentence summary of what the post is about.',
+    file: 'first-post.md',
+  },
 
 
 ];
