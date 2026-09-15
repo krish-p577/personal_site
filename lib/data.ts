@@ -97,9 +97,9 @@ export const projects = [
 export const blogPosts: BlogPost[] = [
   {
     slug: 'first-post',
-    title: 'Post Title',
+    title: 'My thoughts on the impact of LLMs on society, and culture',
     date: 'Jan 2026',
-    excerpt: 'A short one or two sentence summary of what the post is about.',
+    excerpt: 'Cause it seems everyone has a different perspective\n Maybe it won\'t be that bad',
     file: 'first-post.md',
   },
 

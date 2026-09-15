@@ -4,7 +4,7 @@ import { blogPosts } from '@/lib/data';
 export default function Blog() {
   return (
     <section className="text-right">
-      <h2 className="text-2xl font-semibold mb-6">Blog</h2>
+      {/* <h2 className="text-2xl font-semibold mb-6">Blog</h2> */}
       <div className="space-y-6">
         {blogPosts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
