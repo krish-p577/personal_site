@@ -1,6 +1,4 @@
 import type { BlogPost } from './types';
-import { href } from "react-router-dom";
-
 export const aboutMe = {
   name: 'Krish Patel',
   role: 'Software Engineer Intern',
