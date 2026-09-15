@@ -99,7 +99,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'first-post',
     title: 'My thoughts on the impact of LLMs on society, and culture',
     date: 'Jan 2026',
-    excerpt: 'Cause it seems everyone has a different perspective\n Maybe it won\'t be that bad',
+    excerpt: 'Cause it seems everyone has a different perspective',
     file: 'first-post.md',
   },
 
