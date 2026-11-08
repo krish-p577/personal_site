@@ -13,7 +13,7 @@ export const aboutMe = {
     // { label: 'Email', href: 'mailto:krishpatel8976@gmail.com' },
     { label: 'GitHub', href: 'https://github.com/krish-p577' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/krish-patel577/' },
-    // { label: 'Resume', href: '/resume.pdf' },
+    { label: 'Resume', href: '/resume.pdf' },
   ],
 };
 
@@ -81,7 +81,7 @@ export const projects = [
     title: 'Wild Fire Risk Calculator',
     description: 'Using live NASA data and user location data to calculate the rick of being affected by a wildfire. \nInspired by the California wildfires.',
     stack: ['Spring Boot', 'React', 'MySQL', 'AWS'],
-    link: 'https://github.com/krish-p577/Stature-the-AI-finance-manager',
+    link: 'https://github.com/krish-p577/Fire_Risk_Detection_System',
   },
 ];
 
@@ -96,7 +96,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'first-post',
     title: 'My thoughts on the impact of LLMs on society, and culture',
-    date: 'Jan 2026',
+    date: 'Jun 2026',
     excerpt: 'Cause it seems everyone has a different perspective',
     file: 'first-post.md',
   },
